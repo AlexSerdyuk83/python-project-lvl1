@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 from brain_games.scripts.brain_games import greet
-from brain_games.games.check_parity import get_check_parity
+from brain_games.games.calc_games import get_calc_result
 
 
 def main():
     greet()
-    get_check_parity()
+    get_calc_result()
 
 
 if __name__ == "__main__":

@@ -4,8 +4,8 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="games_brain_games",
-    version="0.2.0",
+    name="alexserd_brain_games",
+    version="0.2.4",
     author="Aleksandr Serdyuk",
     author_email="a.galko83@gmail.com",
     description="Brain-games",
