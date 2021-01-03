@@ -42,7 +42,7 @@ def get_progression_games():
         step = get_random_int(2, 4)
         progression_list = (
             get_creates_progression_list(start, stop, step)
-            )
+        )
         riddle_list, element = get_replacing_number(progression_list)
         result_progression = get_creates_progression_string(riddle_list)
         get_question_for_even(result_progression)
