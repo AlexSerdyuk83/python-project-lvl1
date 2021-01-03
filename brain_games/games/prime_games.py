@@ -21,7 +21,7 @@ def is_prime(num):
 def get_prime_games():
     count = 0
     limit = 3
-    start = 1
+    start = 2
     stop = 20
     name = welcome_user()
     task_description_for_prime_games()
