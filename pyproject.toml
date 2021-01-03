@@ -1,8 +1,9 @@
 [tool.poetry]
-name = "alexserd_brain_games"
-version = "0.2.4"
+name = "alexserd-brain-games"
+version = "0.2.5"
 description = ""
 authors = ["Aleksandr Serdyuk <a.galko83@gmail.com>"]
+repository = "https://github.com/AlexSerdyuk83/python-project-lvl1.git"
 packages = [
 	{ include = "brain_games" },
 ]

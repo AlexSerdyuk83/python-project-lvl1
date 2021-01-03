@@ -19,10 +19,12 @@ def is_prime(num):
 def get_prime_games():
     count = 0
     limit = 3
+    start = 1
+    stop = 100
     name = welcome_user()
     task_description_for_prime_games()
     while count < limit:
-        random = get_random_int(1, 100)
+        random = get_random_int(start, stop)
         get_question_for_even(random)
         answer = prompt.string('Your answer: ')
         if is_correct_answer(is_prime, random, answer):

@@ -17,10 +17,12 @@ def is_even(num):
 def get_check_parity():
     count = 0
     limit = 3
+    start = 1
+    stop = 100
     name = welcome_user()
     task_description_for_even_games()
     while count < limit:
-        random = get_random_int(1, 100)
+        random = get_random_int(start, stop)
         get_question_for_even(random)
         answer = prompt.string('Your answer: ')
         if is_correct_answer(is_even, random, answer):

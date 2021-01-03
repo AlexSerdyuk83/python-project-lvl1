@@ -28,11 +28,13 @@ def operation_calc(num1, num2, operator):
 def get_calc_result():
     count = 0
     limit = 3
+    start = 1
+    stop = 10
     name = welcome_user()
     task_description_for_calc()
     while count < limit:
-        random_int1 = get_random_int(1, 10)
-        random_int2 = get_random_int(1, 10)
+        random_int1 = get_random_int(start, stop)
+        random_int2 = get_random_int(start, stop)
         random_operator = get_random_operator(['+', '-', '*'])
         result = operation_calc(random_int1, random_int2, random_operator)
         get_question_for_calc(random_int1, random_int2, random_operator)

@@ -22,11 +22,13 @@ def get_gcd(num1, num2):
 def get_gcd_games():
     count = 0
     limit = 3
+    start = 2
+    stop = 40
     name = welcome_user()
     task_description_for_gcd()
     while count < limit:
-        random_int1 = get_random_int()
-        random_int2 = get_random_int()
+        random_int1 = get_random_int(start, stop)
+        random_int2 = get_random_int(start, stop)
         result = get_gcd(random_int1, random_int2)
         get_question_for_gcd(random_int1, random_int2)
         answer = prompt.string('Your answer: ')
