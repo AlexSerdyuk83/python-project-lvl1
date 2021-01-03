@@ -2,3 +2,5 @@
 dist/
 .vscode/
 __pycache__
+/build
+setup.py
