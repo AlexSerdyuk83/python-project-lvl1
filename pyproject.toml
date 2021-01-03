@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "hexlet_code"
-version = "0.1.6"
+version = "0.1.7"
 description = ""
 authors = ["Aleksandr Serdyuk <a.galko83@gmail.com>"]
 repository = "https://github.com/AlexSerdyuk83/python-project-lvl1.git"

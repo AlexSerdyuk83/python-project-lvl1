@@ -14,7 +14,7 @@ def get_creates_progression_list(start, stop, step, len_prog=10):
     return list(range(start, stop, step))[:len_prog]
 
 
-def get_replacing_number(list_num, start=0, stop=9):
+def get_replacing_number(list_num, start=1, stop=8):
     """in a given list range, replaces an element at an
     random position with two points"""
     position = randint(start, stop)
