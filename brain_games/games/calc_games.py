@@ -3,14 +3,9 @@ from brain_games.cli import welcome_user
 from brain_games.random import get_random_int, get_random_operator
 from brain_games.question import get_question_for_calc
 from brain_games.answer import get_answer_for_user
-"""Realization of the logic of the game brain-even.
-The user must surmise the parity of the number"""
-
-
-def task_description():
-    """The function displays a description of the task"""
-    task = 'What is the result of the expression?'
-    print(task)
+from brain_games.task import task_description_for_calc
+"""Realization of the logic of the game brain-calc.
+The user must execute the operation"""
 
 
 def is_equal(num1, num2):
@@ -34,10 +29,10 @@ def get_calc_result():
     count = 0
     limit = 3
     name = welcome_user()
-    task_description()
+    task_description_for_calc()
     while count < limit:
-        random_int1 = get_random_int()
-        random_int2 = get_random_int()
+        random_int1 = get_random_int(1, 10)
+        random_int2 = get_random_int(1, 10)
         random_operator = get_random_operator(['+', '-', '*'])
         result = operation_calc(random_int1, random_int2, random_operator)
         get_question_for_calc(random_int1, random_int2, random_operator)
