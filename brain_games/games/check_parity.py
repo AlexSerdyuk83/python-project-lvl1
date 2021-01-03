@@ -4,6 +4,8 @@ from brain_games.random import get_random_int
 from brain_games.question import get_question_for_even
 from brain_games.task import task_description_for_even_games
 from brain_games.is_correct_answer import is_correct_answer
+from brain_games.answer import get_answer_for_user
+from brain_games.opposite import get_opposite_answer
 """Realization of the logic of the game brain-even.
 The user must surmise the parity of the number"""
 
@@ -29,7 +31,7 @@ def get_check_parity():
             print('Correct!')
             count += 1
         else:
-            print('Sorry! This is the incorrect answer! Please, try again!')
+            get_answer_for_user(answer, get_opposite_answer(answer), name)
             break
     if count == 3:
         print('Congratulations, {}!'.format(name))
