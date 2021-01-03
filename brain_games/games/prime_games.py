@@ -22,7 +22,7 @@ def get_prime_games():
     count = 0
     limit = 3
     start = 1
-    stop = 100
+    stop = 20
     name = welcome_user()
     task_description_for_prime_games()
     while count < limit:
